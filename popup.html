@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WordSense Toggle</title>
+    <style>
+      body {
+        width: 100px;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #f9f9f9;
+      }
+      h2 {
+        color: rgb(21, 205, 144);
+      }
+      .toggle-icon {
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+        margin-top: 10px;
+      }
+      .toggle-text {
+        margin-top: 10px;
+        font-size: 14px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>WordSense</h2>
+    <img
+      id="toggleIcon"
+      class="toggle-icon"
+      src="power_off.png"
+      alt="Toggle Icon"
+    />
+    <div id="toggleText" class="toggle-text">Disabled</div>
+    <script src="popup.js"></script>
+  </body>
+</html>
